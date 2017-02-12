@@ -8,10 +8,15 @@
 <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 <link href="assets/css/bootstrap-theme.min.css rel="stylesheet"">
 <link href="assets/faws/css/font-awesome.min.css" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text:600" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet" />
 <style>
-
+      #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+        position: relative;
+        z-index: -1;
+      }
     </style>
 </head>
 <body>
@@ -21,15 +26,18 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#"><img class="logo" src="assets/img/img12.ico" /></a>
     </div>
-     <ul class="nav navbar-nav navbar-right">
-          <li><a href="#welcome">HOME</a></li>
-          <li><a href="#whatwedo">WHAT WE DO</a></li>
-          <li><a href="#facilities">FACILITIES</a></li>
-          <li><a href="#ourproducts">OUR PRODUCTS</a></li>
-          <li><a href="#">WHAT PEOPLE THINK</a></li>
-          <li><a href="#meetourteam">MEET OUR TEAM</a></li>
-          <li><a href="#">CONTACT US</a></li>
+     <ul class="nav navbar-nav">
+         <li><a href="#">HOME</a></li>
+          <li><a href="#">PAGES</a></li>
+           <li><a href="#">FEATURES</a></li>
+            <li><a href="#">COMPONENTS</a></li>
+             <li><a href="#">SHOP</a></li>
+              <li><a href="#">BLOG</a></li>
      </ul>
+     <ul class="nav navbar-nav navbar-right">
+    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  </ul>
 </div>
  </nav>
  <!-- nav bar ends -->
@@ -37,28 +45,22 @@
  <!-- the gym top section -->
 <div class="container-fluid">
  <div class="row">
-  <section id="top">
-    <h2><span id="gymword1">THE</span> <span id="gymword">GYM</span></h2>
-    <div class="deco1">
-      <div class="deco-line1"></div>&emsp; &#8413; &emsp; &nbsp;<div class="deco-line1"></div>
-    </div>
-    <h3><span id="gymword1">Fitness Is Not a</span> <span id="gymword">Destination,</span><span id="gymword1"> It Is a Way Of</span> <span id="gymword">Life.</span></h3>
-    <a href="#"><i class="glyphicon glyphicon-menu-down"></i></a>
-  </section>
+   <img src="assets/img/img13.jpg" class="img_cover"/>
+   <h2>THE GYM</h2>
+   <hr />
+   <h3>Fitness Is Not a Destination, It Is a Way Of Life.</h3>
+   <i class="glyphicon glyphicon-menu-down"></i>
  </div>
     <!-- the gym section ends -->
 
     <!-- gym welcome section starts -->
     <div class="row">
-      <section class="welcome" id="welcome">
       <h2>WELCOME TO THE GYM</h2>
-      <div class="deco">
-        <div class="deco-line"></div>&emsp; &#8413; &emsp; &nbsp;<div class="deco-line"></div>
-      </div>
+        <hr>
           <div class="col-md-4">
-            <img src="assets/img/img1.jpeg" id="pics">
-            <img src="assets/img/img4.jpeg" id="pics">
-          </div>
+            <img src="assets/img/img1.jpeg" class="pics">
+            <img src="assets/img/img4.jpeg" class="pics">
+        </div>
         <p class="wtg"> We often encounter, however, follow from the times of the mind, he would never do. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Often hates him fall or pleasure, as selected. Held pleasure to be selected for any error due to the intense pleasure of the needs for which it is!</p>
            <div class="col-md-4">
             <img src="assets/img/img2.jpg" class="pics1">
@@ -68,142 +70,92 @@
             <img src="assets/img/img3.jpeg" class="pics2">
             <img src="assets/img/img7.jpeg" class="pics2">
         </div>
-      </section>
     </div>
     <!-- gym welcome section ends -->
 
     <!-- what we do section starts -->
-    <div class="row  jumbotron">
-      <section class="whatwedo" id="whatwedo">
+    <div class="row">
         <h2>WHAT WE DO</h2>
-        <div class="deco">
-          <div class="deco-line"></div>&emsp; &#8413; &emsp; &nbsp;<div class="deco-line"></div>
-        </div>
-        <section class="iconsandtexts">
+          <hr>
           <div class="col-md-4">
-            <i class="fa fa-quote-right" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-king"></i>
             <p>
-              WE ALWAYS HAVE SOMETHING CRAZY GOING ON!<br /><small id="iconsandtextss">To ensure that our members always get the best, we are constantly rolling out new promotions which will for sure make your life so much easier. Considering that we plan on making your muscles work twice as hard, we think this is an even trade.</small>
+              WE ALWAYS HAVE SOMETHING CRAZY GOING ON!<br />To ensure that our members always get the best, we are constantly rolling out new promotions which will for sure make your life so much easier. Considering that we plan on making your muscles work twice as hard, we think this is an even trade.
             </p>
 
           </div>
           <div class="col-md-4">
-           <i class="fa fa-yelp" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-queen"></i>
             <p>
-              WE HAVE HAND-PICKED THE BEST pPERSONAL TRAINERS.<br /><small id="iconsandtextss">We have the widest choice of specialist classes. We have the best studio spaces. We have state-of-the-art gym equipment. We have everything under ONE roof at our Imperial Wharf, Fulham gym.</small>
+              We have hand-picked the very best coaches and personal trainers. We have the widest choice of specialist classes. We have the best studio spaces. We have state-of-the-art gym equipment. We have everything under ONE roof at our Imperial Wharf, Fulham gym.
             </p>
 
           </div>
           <div class="col-md-4">
-            <i class="fa fa-cloud" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-hourglass"></i>
             <p>
-              THE ONE EXPERIENCE IS COMPLETELY UNIQUE.<br /><small id="iconsandtextss">We cater for everyone from athletes and experienced weightlifters we have state-of-the-art gym equipment to those who want to improve their mental and physical health and become the best they can be.</small>
+              The ONE experience is completely unique – we cater for everyone from athletes and experienced weightlifters to those who want to improve their mental and physical health and become the best they can be.
             </p>
 
           </div>
-        </section>
-        </section>
     </div>
     <!-- what we do section ends -->
 
     <!-- facilities section starts -->
     <div class="row">
-      <section class="facilities" id="facilities">
       <h2>OUR FACILITIES</h2>
-      <div class="deco">
-        <div class="deco-line"></div>&emsp; &#8413; &emsp; &nbsp;<div class="deco-line"></div>
-      </div>
-      <section class="facilities1">
+      <hr />
       <h4>Check out the facilities we provide at our gym.We would love to hear your feedback.</h4>
-      <div class="col-md-4">
-        <img src="assets/img/img8.jpg" id="facilitiesimg1" />
-       <section class="facilitiestext">
-         <h4>GET STRONG.</h4>
+      <div class="col-md-4" id="gymm">
+        <img src="assets/img/img8.jpg" />
+        <h4>GET STRONG.</h4>
         <p>
           Join the ONE Strength and Conditioning studio for high intensity cross-training workouts which include plyometric and strength-based sessions
         </p>
-          <a href="#" class="btn btn-default btn-md btn-md1" role="button">More Details</a>
-       </section>
+                <a href="#" class="btn btn-default btn-md" role="button">More Details</a>
       </div>
       <div class="col-md-4">
         <img src="assets/img/img9.jpg" />
-             <section class="facilitiestext">
         <h4>GET FIT.</h4>
         <p>
           Our experienced team combines cross-fit qualified and GB weightlifting coaches that bring the best Workouts of the Day, weightlifting, powerlifting, intense kettle bells, TRX, battle ropes and plyometric classes.
         </p>
         <a href="#" class="btn btn-default btn-md" role="button">More Details</a>
-        </section>
       </div>
       <div class="col-md-4">
         <img src="assets/img/img10.jpg" />
-             <section class="facilitiestext">
         <h4>GET RIPPED.</h4>
         <p>
           Open to all abilities, our team will help improve your performance, shape, and overall fitness
         </p>
-        <a href="#" class="btn btn-default btn-md btn-md1" role="button">More Details</a>
-       </section>
+        <a href="#" class="btn btn-default btn-md" role="button">More Details</a>
       </div>
-    </section>
-     </section>
+
     </div>
     <!-- facilities section ends -->
 
+    <!-- single column section by professional starts -->
+    <div class="row">
+      <div class="col-md-4">
 
-    <!-- our products starts -->
-<div class="row">
-  <section class="ourpdcts" id="ourproducts">
-  <h2>Our Products</h2>
-  <div class="deco">
-    <div class="deco-line"></div>&emsp; &#8413; &emsp; &nbsp;<div class="deco-line"></div>
-  </div>
-</section>
-  <div class="col-md-3 jumbotron">
-    <img src="assets/img/img18.jpg" />
-    <h2><a href="#">Gym Bench</a></a></h2>
-    <ul id="ourproductslist">
-      <li><a href="#">Multi Adjustable Bench</a></li>
-      <li><a href="#">Fitness Bench</a></li>
-      <li><a href="#">Adjustable Bench</a></li>
-    </ul>
-  </div>
+      </div>
+      <div class="col-md-4">
+        <img src="assets/img/img11.jpg" />
+        <i class="fa fa-bolt" aria-hidden="true"></i>
+        <h2>Get Trained By Professionals</h2>
+        <p>
+          Get youself trained by the best in their work.Proper guidence on every exercise is provided by the trained professionals.
+        </p>
+        <a href="#" class="btn btn-default btn-md" role="button">More Details</a>
+      </div>
+      <div class="col-md-4">
 
-  <div class="col-md-3 jumbotron">
-    <img src="assets/img/img19.jpg" />
-    <h2><a href="#">Exercise Bike</a></h2>
-    <ul id="ourproductslist">
-      <li><a href="#">Exercise Cycle</a></li>
-      <li><a href="#">Recumbent Bike</a></li>
-      <li><a href="#">Spin Bike</a></li>
-    </ul>
-  </div>
-
-  <div class="col-md-3 jumbotron">
-    <img src="assets/img/img20.jpg" />
-    <h2><a href="#"><a href="#">Gym Equipments</a></h2>
-    <ul id="ourproductslist">
-      <li><a href="#">Home Gym Equipment</a></li>
-      <li><a href="#">Dumbbell Stand</a></li>
-      <li><a href="#">Square Tube</a></li>
-    </ul>
-  </div>
-
-  <div class="col-md-3 jumbotron">
-    <img src="assets/img/img21.jpg" />
-    <h2><a href="#">Gym Machine</a></h2>
-    <ul id="ourproductslist">
-      <li><a href="#">Hack Squat Machine</a></li>
-      <li><a href="#">Gym Ab Board</a></li>
-      <li><a href="#">High Pulley Machine</a></li>
-    </ul>
-  </div>
-
-</div>
-    <!-- our products ends -->
+      </div>
+    </div>
+    <!-- single column section by professional ends -->
 
     <!-- meet our team section starts -->
-<div class="row" id="meetourteam">
+<div class="row">
   <h2>Meet Our Team</h2>
   <div class="col-md-3" id="mot">
         <img src="assets/img/img14.jpeg" class="mot1"/>
@@ -249,34 +201,14 @@
 </div>
     <!-- meet our team section ends -->
 
-    <!-- single column section by professional starts -->
-    <div class="row">
-      <div class="col-md-4">
-
-      </div>
-      <div class="col-md-4">
-        <div class="hovereffect">
-             <img class="img-responsive" src="assets/img/img11.jpg" alt="">
-             <div class="overlay">
-                <h2>Get Trained By Professionals</h2>
-                <a href="#" class="btn btn-default btn-md btn-md1" role="button">Know More</a>
-             </div>
-         </div>
-      </div>
-      <div class="col-md-4">
-
-      </div>
-    </div>
-    <!-- single column section by professional ends -->
-
     <!-- contact us starts -->
 <div class="row">
-  <section id="contact">
   <div id="map"></div>
-  <div class="contact-box">
+  <div class="col-md-3">
     <h3>Where To Meet?</h3>
     <p>
-     N-81, Barakhamba Road, Block N, Cannaught Place, Block N,<br /> Connaught Place, New Delhi, Delhi 110001
+      Bld. Mihail Kogalniceanu nr. 8
+Bucharest, Romania
     </p>
 <h3>Want to say hello?</h3>
   <a href="#" class="btn btn-default btn-md btncs" role="button">Contact Us</a>
@@ -286,21 +218,14 @@
  </a>
 
   </div>
-</section>
 
 </div>
     <!-- contact us close -->
-
-    <!-- footer starts -->
-<footer>
-
-</footer>
-    <!-- footer ends -->
 </div>
 
 <script>
       function initMap() {
-        var uluru = {lat: 28.6311389, lng: 77.2198641};
+        var uluru = {lat: 28.6357416, lng: 77.1786922};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: uluru
