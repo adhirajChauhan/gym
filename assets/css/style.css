@@ -12,9 +12,10 @@ table-layout: fixed;
 #top {
   background: url("../img/img13.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   position: relative;
-  top: -250px;
+  top: -115px;
   padding: 470px 0 0 50px;
   background-attachment: fixed;
 }
@@ -48,21 +49,23 @@ table-layout: fixed;
     position: relative;
     bottom: 60px;
   }
-
-.logo {
-  width:15%;
-  position: relative;
-  top: -20px;
-  left: 50px;
-}
 h1 {
   text-align: center;
   margin-top: 50px;
+}
+.decoo {
+  width: 100%;
+  color: white;
+  position: relative;
+  left: -285px;
+  top: -255px;
+  color: rgba(150, 7, 14, 0.8);
 }
 .deco {
   width: 100%;
   color: white;
   position: relative;
+
   color: rgba(150, 7, 14, 0.8);
 }
 .deco-line {
@@ -426,3 +429,75 @@ transform:translatey(0);
 .hovereffect:hover a.info {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
+}
+@media screen and (max-width: 768px) {
+  #top {
+   font-size: 40px;
+   padding-left: 0px;
+  }
+  #top h2 {
+    font-size: 44px;
+    position: relative;
+    left: 0px;
+  }
+  #top h3 {
+    position: relative;
+    left: 0px;
+  }
+  .decoo {
+    position: relative;
+    left: 0px;
+  }
+  gymword1 {
+    font-size: 20px
+  }
+  .wtgtext {
+    position: relative;
+    left: 140px;
+    bottom: 400px;
+    font-size: 10px;
+  }
+  pics {
+    margin-top: 0;
+    top: 339px;
+  }
+  #pics1 {
+  margin-bottom: 35px;
+  margin-top: 107px;
+  }
+  #welcome {
+    height: 670px;
+  }
+  .pics33 {
+  top: 355px;
+  }
+  .pics1 {
+    margin-top:150px;
+  }
+  #pics11 {
+    top: 92px;
+    margin-top: 0;
+  }
+  #pics {
+    top: 338px;
+  }
+  #iconsandtexts1 {
+    top: 107px;
+  }
+.abc {
+  height: 1250px;
+}
+#iconsandtexts2 {
+  top: 242px;
+}
+#mot {
+  margin-bottom: 100px;
+}
+.contact-box {
+  display: table-footer-group;
+}
+.footer321 {
+  margin-top: 310px;
+}
+
+}
